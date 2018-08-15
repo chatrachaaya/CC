@@ -1,0 +1,14 @@
+CREATE DATABASE data;
+
+use data;
+
+CREATE TABLE HouseDetails (
+	id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+	name VARCHAR(30) NOT NULL,
+	HouseImage BLOB,
+	email VARCHAR(50) NOT NULL,
+	status VARCHAR(15) NOT NULL,
+	BHK INT(2),
+	address VARCHAR(50),
+	dateIssued TIMESTAMP
+);
